@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Dinámico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Estilos de W3.CSS -->
+  <link rel="stylesheet" href="assets/w3.css">
+
+  <!-- PDF.js para previsualización de PDFs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js "></script>
+
+  <style>
+    body {
+      margin: 2em;
+    }
+
+    .w3-form-group {
+      margin-bottom: 1em;
+    }
+
+    .preview-container img {
+      margin: 0.5em;
+      max-width: 100px;
+      border: 1px solid #ccc;
+      padding: 2px;
+    }
+
+    .preview-container video,
+    .preview-container audio {
+      margin-top: 0.5em;
+      max-width: 100%;
+    }
+
+    .preview-container canvas {
+      border: 1px solid #ddd;
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+
+<body class="w3-container">
+
+  <h1 class="w3-text-blue">Formulario Dinámico</h1>
+
+  <label for="schema-file">Selecciona un archivo de esquema (.json):</label>
+  <input type="file" id="schema-file" accept=".json"><br><br>
+
+  <div id="schema-selector" style="display:none;" class="w3-card w3-padding">
+    <label for="schema-choice">Elige un tipo de inmueble:</label>
+    <select id="schema-choice" class="w3-select w3-border"></select>
+  </div>
+
+  <div id="formulario-container" class="w3-card w3-padding w3-margin-top"></div>
+
+  <div class="w3-card w3-padding w3-margin-top">
+    <h2>Historial de Registros</h2>
+    <div id="historial-container"></div>
+  </div>
+
+  <!-- Script principal -->
+  <script src="form.js"></script>
+
+</body>
+
+</html>

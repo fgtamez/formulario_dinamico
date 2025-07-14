@@ -1,0 +1,948 @@
+[
+  {
+    "nombre": "Casa Habitación",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_colonia",
+        "texto": "Colonia / Localidad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_calle",
+        "texto": "Calle",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_numero_exterior",
+        "texto": "Número exterior",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_numero_interior",
+        "texto": "Número interior (opcional)",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie_total",
+        "texto": "Superficie total del terreno (m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_superficie_construida",
+        "texto": "Superficie construida (m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_recamaras",
+        "texto": "Número de recámaras",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_banos",
+        "texto": "Número de baños",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_estacionamientos",
+        "texto": "Número de estacionamientos",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_tipo_inmueble",
+        "texto": "Tipo de casa",
+        "tipo": "select",
+        "opciones": ["Casa independiente", "Casa en condominio", "Casa en fraccionamiento"]
+      },
+      {
+        "id": "pregunta_alberca",
+        "texto": "¿Tiene alberca?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_jardin",
+        "texto": "¿Tiene jardín?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_seguridad",
+        "texto": "¿Tiene sistema de seguridad?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube imágenes del inmueble",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos del inmueble",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Departamento",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_colonia",
+        "texto": "Colonia / Localidad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_calle",
+        "texto": "Calle",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_numero_exterior",
+        "texto": "Número exterior",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_numero_interior",
+        "texto": "Número interior",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_piso",
+        "texto": "Piso del departamento",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie construida (m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_recamaras",
+        "texto": "Número de recámaras",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_banos",
+        "texto": "Número de baños",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_elevador",
+        "texto": "¿Tiene elevador?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_gym",
+        "texto": "¿Acceso a gimnasio o alberca?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube imágenes del departamento",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos del departamento",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Local Comercial",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_colonia",
+        "texto": "Colonia / Localidad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_calle",
+        "texto": "Calle",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_numero_exterior",
+        "texto": "Número exterior",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_numero_interior",
+        "texto": "Número interior",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie del local (m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_tipo_local",
+        "texto": "Tipo de local",
+        "tipo": "select",
+        "opciones": ["Planta baja", "Semi-sótano", "Sótano", "Interior", "Esquina", "Otro"]
+      },
+      {
+        "id": "pregunta_acceso_discapacitados",
+        "texto": "¿Tiene acceso para personas con discapacidad?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube imágenes del local",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos del local",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Terreno Habitacional",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_colonia",
+        "texto": "Colonia / Localidad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie del terreno (m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_uso_suelo",
+        "texto": "¿Tiene uso de suelo habitacional?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_escrituras",
+        "texto": "¿Tiene escrituras?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_servicios",
+        "texto": "¿Tiene servicios básicos (agua, luz, drenaje)?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_planos",
+        "texto": "Sube planos o imágenes del terreno",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos del terreno",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Terreno Campestre",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_localidad",
+        "texto": "Localidad / Poblado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie del terreno (ha/m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_topografia",
+        "texto": "Topografía",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_agua",
+        "texto": "¿Tiene agua potable o pozo?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_luz",
+        "texto": "¿Tiene suministro eléctrico?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube planos o imágenes del terreno",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos del terreno",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Finca",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_localidad",
+        "texto": "Localidad / Poblado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie total (ha/m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_clima",
+        "texto": "Características del clima",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_agua",
+        "texto": "¿Tiene acceso a agua superficial o subterránea?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_cultivo",
+        "texto": "¿Se puede usar para cultivo?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube imágenes de la finca",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos de la finca",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Bodega Almacenamiento",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_colonia",
+        "texto": "Colonia / Zona",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie (m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_altura",
+        "texto": "Altura del techo (m)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_porton",
+        "texto": "¿Tiene portón de carga?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_oficina",
+        "texto": "¿Tiene oficina administrativa?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube fotos o planos de la bodega",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos de la bodega",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Bodega Industrial",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_colonia",
+        "texto": "Colonia / Zona industrial",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie (m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_altura",
+        "texto": "Altura del techo (m)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_porton",
+        "texto": "¿Tiene portón de carga?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_oficina",
+        "texto": "¿Tiene oficina administrativa?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_cisterna",
+        "texto": "¿Tiene cisterna o red municipal?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube fotos o planos de la bodega",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos de la bodega",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  },
+  {
+    "nombre": "Rancho",
+    "campos": [
+      {
+        "id": "pregunta_tipo_operacion",
+        "texto": "Tipo de operación",
+        "tipo": "select",
+        "opciones": ["Compra", "Venta", "Renta", "Traspaso", "En litigio"]
+      },
+      {
+        "id": "pregunta_estado",
+        "texto": "Estado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_municipio",
+        "texto": "Municipio / Ciudad",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_localidad",
+        "texto": "Localidad / Poblado",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_superficie",
+        "texto": "Superficie total (ha/m²)",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_tipo",
+        "texto": "Tipo de rancho",
+        "tipo": "text"
+      },
+      {
+        "id": "pregunta_cuartos",
+        "texto": "Número de cuartos",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_banos",
+        "texto": "Número de baños",
+        "tipo": "number"
+      },
+      {
+        "id": "pregunta_establos",
+        "texto": "¿Tiene establos o corrales?",
+        "tipo": "checkbox"
+      },
+      {
+        "id": "pregunta_precio",
+        "texto": "Precio (MXN/USD/EUR)",
+        "tipo": "currency"
+      },
+      {
+        "id": "pregunta_latitud",
+        "texto": "Latitud (ej: 19.4326)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_longitud",
+        "texto": "Longitud (ej: -99.1332)",
+        "tipo": "decimal",
+        "decimales": 6
+      },
+      {
+        "id": "pregunta_descripcion",
+        "texto": "Descripción adicional",
+        "tipo": "textarea"
+      },
+      {
+        "id": "imagenes",
+        "texto": "Sube fotos o planos del rancho",
+        "tipo": "imagenes",
+        "maxFiles": 15,
+        "allowedTypes": ["jpg", "png", "jpeg"]
+      },
+      {
+        "id": "videos",
+        "texto": "Sube videos del rancho",
+        "tipo": "videos",
+        "maxFiles": 5,
+        "allowedTypes": ["mp4", "mkv", "mov", "avi"]
+      },
+      {
+        "id": "audios",
+        "texto": "Sube audios explicativos",
+        "tipo": "audios",
+        "maxFiles": 5,
+        "allowedTypes": ["mp3", "wav", "ogg"]
+      },
+      {
+        "id": "documentos",
+        "texto": "Sube documentos legales",
+        "tipo": "documentos",
+        "maxFiles": 5,
+        "allowedTypes": ["pdf", "doc", "docx", "xls", "xlsx", "txt"]
+      }
+    ]
+  }
+]

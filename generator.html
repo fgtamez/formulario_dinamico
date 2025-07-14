@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Cuestionarios</title>
+  <link rel="stylesheet" href="assets/w3.css">
+  <style>
+    body { margin: 2em; }
+    .campo-preview {
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-bottom: 1em;
+      background-color: #f9f9f9;
+    }
+    label { display: block; margin-top: 0.5em; }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 0.4em;
+    }
+  </style>
+</head>
+<body class="w3-container">
+
+<h1 class="w3-text-blue">Generador de Cuestionarios</h1>
+
+<!-- Formulario para agregar campos -->
+<div class="w3-card w3-padding w3-margin-top">
+  <h3>Agregar Nuevo Campo</h3>
+
+  <label for="nombre">Texto visible:</label>
+  <input type="text" id="nombre" placeholder="Ej: '¿Cuántas recámaras tiene?'">
+
+  <label for="id">ID único:</label>
+  <input type="text" id="id" placeholder="Ej: 'recamaras'">
+
+  <label for="tipo">Tipo de campo:</label>
+  <select id="tipo" onchange="mostrarOpcionesAdicionales()">
+    <option value="text">Texto</option>
+    <option value="email">Email</option>
+    <option value="tel">Teléfono</option>
+    <option value="url">URL</option>
+    <option value="date">Fecha</option>
+    <option value="datetime-local">Fecha y hora local</option>
+    <option value="time">Hora</option>
+    <option value="range">Rango numérico</option>
+    <option value="color">Selector de color</option>
+    <option value="number">Número</option>
+    <option value="checkbox">Casilla de verificación</option>
+    <option value="select">Lista desplegable</option>
+    <option value="textarea">Área de texto</option>
+    <option value="currency">Moneda</option>
+    <option value="decimal">Decimal</option>
+    <option value="imagenes">Imágenes</option>
+    <option value="videos">Videos</option>
+    <option value="audios">Audios</option>
+    <option value="documentos">Documentos</option>
+  </select>
+
+  <div id="opciones-seleccion" style="display:none;">
+    <label for="opciones">Opciones (separadas por comas):</label>
+    <textarea id="opciones" rows="3" placeholder="Ej: Opción 1, Opción 2"></textarea>
+  </div>
+
+  <div id="limites-adicionales" style="display:none;">
+    <label for="maxFiles">Máximo de archivos:</label>
+    <input type="number" id="maxFiles" value="5" min="1" max="100">
+    
+    <label for="allowedTypes">Tipos permitidos (ej: pdf,docx):</label>
+    <input type="text" id="allowedTypes" placeholder="Ej: pdf,doc,docx,xls,xlsx,txt">
+  </div>
+
+  <label>
+    <input type="checkbox" id="requerido"> Requerido
+  </label>
+
+  <br>
+  <button onclick="agregarCampo()" class="w3-button w3-green w3-margin-top">Agregar Campo</button>
+</div>
+
+<!-- Vista previa de los campos añadidos -->
+<div id="formulario-preview" class="w3-margin-top"></div>
+
+<!-- Botón para exportar el esquema -->
+<div class="w3-margin-top">
+  <button onclick="exportarEsquema()" class="w3-button w3-blue">Exportar Esquema JSON</button>
+</div>
+
+<!-- Área oculta para mostrar el JSON generado -->
+<pre id="esquema-json" style="display:none;"></pre>
+
+<script src="generator.js"></script>
+
+</body>
+</html>
